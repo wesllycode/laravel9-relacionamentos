@@ -7,9 +7,7 @@
     <title>Colocar função do Laravel que pega o Título</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <!-- component -->
-    <!-- Fonte: https://tailwindcomponents.com/component/projects-table -->
+<body>  
 <div class="overflow-x-auto">
     
     @yield('content')
