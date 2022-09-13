@@ -15,3 +15,7 @@ use App\Http\Controllers\CrudOperatorsController;
 */
 
 Route::get('/', [CrudOperatorsController::class,'index'])->name('site.index'); 
+
+Route::prefix('create')->group(function () {
+    Route::get('/user',[CrudOperatorsController::class,'createUser'])->name('site.createuser');
+});
