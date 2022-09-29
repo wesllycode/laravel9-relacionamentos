@@ -21,6 +21,8 @@ class IpsTableSeeder extends Seeder
             array_push($data,[
                 'id' => $ip->id,
                 'ip' => $ip->ip,
+                'created_at' => date('Y-m-d h:i:s'),
+                'updated_at' => date('Y-m-d h:i:s'),
             ]);
         }
         DB::table('ips')->insert($data);
