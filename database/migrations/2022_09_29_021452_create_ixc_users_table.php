@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('ixc_users', function (Blueprint $table) {
             $table->id();
             $table->char('cpf',13);
-            $table->char('cellphone',11);
+            $table->char('cellphone',13);
             $table->timestamps();
         });
     }
