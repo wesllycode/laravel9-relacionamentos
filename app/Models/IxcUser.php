@@ -14,4 +14,8 @@ class IxcUser extends Model
         'cellphone'
     ];
 
+    public function detail(){
+        return $this->belongsTo(Detail::class);
+    }
+
 }

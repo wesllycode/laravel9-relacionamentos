@@ -14,17 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('details', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('ixc_user_id')
-                ->nullable()
-                ->constrained()
-                ->onDelete('CASCADE')
-                ->onUpdate('CASCADE');                
-            $table->foreignId('user_id')
-                ->nullable()
-                ->constrained()
-                ->onDelete('CASCADE')
-                ->onUpdate('CASCADE');
+            $table->id();          
+            $table->foreign('ixc_user_id')
+                ->references('id')
+                ->on('ixc_users');
             $table->string('city');
             $table->timestamps();
         });
