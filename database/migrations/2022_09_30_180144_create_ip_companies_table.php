@@ -18,7 +18,15 @@ return new class extends Migration
             $table->foreignId('ixc_user_id')
                 ->constrained()
                 ->onDelete('CASCADE')
-                ->onUpdate('CASCADE');
+                ->onUpdate('CASCADE');    
+            $table->foreignId('ip_id')
+                ->constrained()
+                ->onDelete('CASCADE')
+                ->onUpdate('CASCADE');      
+            $table->foreignId('company_id')
+                ->constrained()
+                ->onDelete('CASCADE')
+                ->onUpdae('CASCADE');
             $table->timestamps();
         });
     }

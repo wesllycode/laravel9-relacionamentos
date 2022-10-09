@@ -16,9 +16,10 @@ class DatabaseSeeder extends Seeder
     {
         //$this->call(IpsTableSeeder::class);       
         $this->call([
-            IpTableSeeder::class,
-            CompanyTableSeeder::class,
             IxcUserTableSeeder::class,
+            IpTableSeeder::class,
+            CompanyTableSeeder::class, 
+            IpCompanyTableSeeder::class
         ]);      
         
     }

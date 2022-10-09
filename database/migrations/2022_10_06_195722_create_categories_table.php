@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\IpCompany;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -14,10 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('ixc_users', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->char('cpf',13);
-            $table->char('cellphone',13);
+            $table->string('title');
             $table->timestamps();
         });
     }
@@ -29,7 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ixc_users');
+        Schema::dropIfExists('categories');
     }
-       
 };

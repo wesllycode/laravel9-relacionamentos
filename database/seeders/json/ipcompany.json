@@ -1,0 +1,27 @@
+[
+    {
+        "id":"1",
+        "ixc_user_id":"1",
+        "ip_id":"1",
+        "company_id":"1"
+    },
+    
+    {
+        "id":"2",
+        "ixc_user_id":"2",
+        "ip_id":"1",
+        "company_id":"2"
+    },
+    {
+        "id":"3",
+        "ixc_user_id":"3",
+        "ip_id":"1",
+        "company_id":"3"
+    },
+    {
+        "id":"4",
+        "ixc_user_id":"4",
+        "ip_id":"1",
+        "company_id":"4"
+    }      
+]
