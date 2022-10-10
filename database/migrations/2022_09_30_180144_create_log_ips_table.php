@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('ip_companies', function (Blueprint $table) {
+        Schema::create('log_ips', function (Blueprint $table) {
             $table->id();
             $table->foreignId('ixc_user_id')
                 ->constrained()
@@ -26,7 +26,7 @@ return new class extends Migration
             $table->foreignId('company_id')
                 ->constrained()
                 ->onDelete('CASCADE')
-                ->onUpdae('CASCADE');
+                ->onUpdate('CASCADE');
             $table->timestamps();
         });
     }

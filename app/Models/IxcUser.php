@@ -14,14 +14,8 @@ class IxcUser extends Model
         'cellphone'
     ];
 
-<<<<<<< HEAD
-    public function ipcompanies(){
-        return $this->belongsToMany(IpCompany::class,'ip_companies','ixc_user_id',);
-    }
-=======
     public function detail(){
-        return $this->belongsTo(Detail::class);
+        return $this->hasOne(Detail::class, 'ixc_user_id','id');
     }
 
->>>>>>> 115f6ba512bb3f2f7c80061d82804860a035fb31
 }

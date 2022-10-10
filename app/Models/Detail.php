@@ -12,10 +12,6 @@ class Detail extends Model
         'id',
         'ixc_user_id',       
         'city',
-    ];
-
-    public function ixcuser(){
-        return $this->hasMany(IxcUser::class);
-    }
+    ]; 
     
 }

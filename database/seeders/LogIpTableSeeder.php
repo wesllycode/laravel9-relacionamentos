@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 
-class IpCompanyTableSeeder extends Seeder
+class LogIpTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,14 +16,14 @@ class IpCompanyTableSeeder extends Seeder
      */
     public function run()
     {
-        $ipcompanies = json_decode(file_get_contents(__DIR__ . '/json/ipcompany.json'));
+        $logips = json_decode(file_get_contents(__DIR__ . '/json/logip.json'));
         $data = [];
-        foreach($ipcompanies as $ipcom){
+        foreach($logips as $logip){
             array_push($data,[
-                'id'=> $ipcom->id,
-                'ixc_user_id'=> $ipcom->ixc_user_id,
-                'ip_id'=> $ipcom->ip_id,
-                'company_id'=> $ipcom->company_id,
+                'id'=> $logip->id,
+                'ixc_user_id'=> $logip->ixc_user_id,
+                'ip_id'=> $logip->ip_id,
+                'company_id'=> $logip->company_id,
                 'created_at'=> date('Y-m-d h:i:s'),
                 'updated_at'=> date('Y-m-d h:i:s'),
             ]);                     
