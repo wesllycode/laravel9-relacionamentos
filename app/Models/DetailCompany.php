@@ -14,7 +14,7 @@ class DetailCompany extends Model
         'company_id',
         'state',
         'city,',
-        'distric',
+        'district',
         'street',
         'cep',
         'cellphone'        
