@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             IxcUserTableSeeder::class,
             IpTableSeeder::class,
             CompanyTableSeeder::class, 
+            DetailCompanyTableSeeder::class,
             DetailTableSeeder::class,  
             LogIpTableSeeder::class,   
         ]);      
