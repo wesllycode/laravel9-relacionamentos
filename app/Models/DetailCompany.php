@@ -10,6 +10,13 @@ class DetailCompany extends Model
     use HasFactory;
 
     protected $fillable = [
-
+        'id',
+        'company_id',
+        'state',
+        'city,',
+        'distric',
+        'street',
+        'cep',
+        'cellphone'        
     ];
 }

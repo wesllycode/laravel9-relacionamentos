@@ -14,15 +14,5 @@ class Company extends Model
         'name',
         'asn'
     ];
-    public function ipcompanies(){
-        return $this->belongsToMany(IpCompany::class);
-    }
-
-    public function ips(){
-        return $this->belongsToMany(Ip::class);
-    }
-
-    public function ixcusers(){
-        return $this->belongsToMany(IxcUser::class);
-    }
+ 
 }
