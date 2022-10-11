@@ -15,9 +15,19 @@ class Detail extends Model
         'city',
     ]; 
     
+    /* 
+       Eu acesso  Detail::find(1)->ixcuser
+       Quer dizer, ele vai selecionar o ID 1 do Detail e vai me retornar o dados do ixc_user_id que tem no model IxcUser 
+    */
+
     public function ixcuser(){
         return $this->belongsTo(IxcUser::class,'ixc_user_id','id');
     }
+
+    /* 
+       Eu acesso  Detail::find(1)->user
+       Quer dizer, ele vai selecionar o ID 1 do Detail e vai me retornar o dados do user_id que tem no model User
+    */
 
     public function user(){
         return $this->belongsTo(User::class, 'user_id','id');
