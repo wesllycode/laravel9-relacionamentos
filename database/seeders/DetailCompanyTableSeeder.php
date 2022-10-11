@@ -24,7 +24,8 @@ class DetailCompanyTableSeeder extends Seeder
                 'state' => $detailcompany->state,
                 'city' => $detailcompany->city,
                 'district' => $detailcompany->district,
-                'street' => $detailcompany->cep,
+                'street' => $detailcompany->street,
+                'cep'=>$detailcompany->cep,
                 'cellphone' => $detailcompany->cellphone
             ];
         }

@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "company_id": "1",
+        "state": "ce",
+        "city": "sobral",
+        "district": "Domingo Olimpio",
+        "street": "Rua São José",
+        "cep":"62300400",
+        "cellphone": "8899623563"
+    },
+    {
+        "id": "2",
+        "company_id": "2",
+        "state": "Al",
+        "city": "Maceio",
+        "district": "Aguas belas",
+        "street": "Rua Pegar Pá",
+        "cep":"63080400",
+        "cellphone": "8688623563"
+    }
+]
