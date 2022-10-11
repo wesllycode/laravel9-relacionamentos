@@ -15,7 +15,7 @@ class IxcUser extends Model
     ];
 
     public function detail(){
-        return $this->hasOne(Detail::class, 'ixc_user_id','id');
+        return $this->hasOne(Detail::class);
     }
 
 }

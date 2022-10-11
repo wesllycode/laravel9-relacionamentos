@@ -28,6 +28,6 @@ class LogIpTableSeeder extends Seeder
                 'updated_at'=> date('Y-m-d h:i:s'),
             ]);                     
         }
-        DB::table('ip_companies')->insert($data); 
+        DB::table('log_ips')->insert($data); 
     }
 }

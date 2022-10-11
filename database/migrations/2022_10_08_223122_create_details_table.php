@@ -14,13 +14,25 @@ return new class extends Migration
     public function up()
     {
         Schema::create('details', function (Blueprint $table) {
-            $table->id();          
-            $table->foreign('ixc_user_id')
-                ->references('id')
-                ->on('ixc_users');
+            $table->id();                              
+            $table->foreignId('ixc_user_id')
+                ->nullable()
+                ->constrained('ixc_users')
+                ->onDelete('CASCADE')
+                ->onUpdate('CASCADE');
+                $table->foreignId('user_id')
+                ->nullable()
+                ->constrained()
+                ->onDelete('CASCADE')
+                ->onUpdate('CASCADE');           
             $table->string('city');
             $table->timestamps();
+
+           
+          
         });
+
+        
     }
 
     /**
