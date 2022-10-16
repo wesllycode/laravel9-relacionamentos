@@ -24,12 +24,3 @@ Route::get('/', [CrudOperatorsController::class,'index'])->name('site.index');
 Route::prefix('create')->group(function () {
     Route::get('/user',[CrudOperatorsController::class,'createUser'])->name('site.createuser');
 });
-
-Route::get('/many', function (){
-     $user = IxcUser::find('1');
-     $user->ipcompanies->ips;
-
-     dd($user);
-
-
-});
