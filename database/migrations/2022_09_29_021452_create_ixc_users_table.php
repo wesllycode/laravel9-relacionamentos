@@ -28,7 +28,8 @@ return new class extends Migration
      * @return void
      */
     public function down()
-    {
+    {      
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('ixc_users');
     }
        

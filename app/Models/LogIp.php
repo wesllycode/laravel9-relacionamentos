@@ -15,6 +15,7 @@ class LogIp extends Model
         'ixc_user_id',
         'ip_id',
         'company_id',
+        'timeout'
     ];
   
 }

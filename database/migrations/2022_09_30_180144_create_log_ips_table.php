@@ -26,7 +26,8 @@ return new class extends Migration
             $table->foreignId('company_id')
                 ->constrained()
                 ->onDelete('CASCADE')
-                ->onUpdate('CASCADE');
+                ->onUpdate('CASCADE');           
+            $table->string('timeout');
             $table->timestamps();
         });
     }
@@ -37,7 +38,8 @@ return new class extends Migration
      * @return void
      */
     public function down()
-    {
-        Schema::dropIfExists('ip_companies');
+    {     
+        Schema::disableForeignKeyConstraints();     
+        Schema::dropIfExists('log_ips');
     }
 };
