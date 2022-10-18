@@ -24,6 +24,7 @@ class LogIpTableSeeder extends Seeder
                 'ixc_user_id'=> $logip->ixc_user_id,
                 'ip_id'=> $logip->ip_id,
                 'company_id'=> $logip->company_id,
+                'timeout' => date('h:i:s'),
                 'created_at'=> date('Y-m-d h:i:s'),
                 'updated_at'=> date('Y-m-d h:i:s'),
             ]);                     
