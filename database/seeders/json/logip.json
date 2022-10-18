@@ -17,15 +17,15 @@
     {
         "id":"3",
         "ixc_user_id":"3",
-        "ip_id":"1",
-        "company_id":"3",
+        "ip_id":"2",
+        "company_id":"1",
         "timeout":"24:00:00"
     },
     {
         "id":"4",
         "ixc_user_id":"4",
-        "ip_id":"1",
-        "company_id":"4",
+        "ip_id":"2",
+        "company_id":"2",
         "timeout":"24:00:00"
     }      
 ]
