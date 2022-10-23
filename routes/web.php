@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CrudOperatorsController;
+use App\Http\Controllers\IpController;
 use App\Models\Company;
 use \App\Models\IpCompany;
 use \App\Models\User;
@@ -24,3 +25,5 @@ Route::get('/', [CrudOperatorsController::class,'index'])->name('site.index');
 Route::prefix('create')->group(function () {
     Route::get('/user',[CrudOperatorsController::class,'createUser'])->name('site.createuser');
 });
+
+Route::get('/listar',[IpController::class,'listar'])->name('ip.listar');
