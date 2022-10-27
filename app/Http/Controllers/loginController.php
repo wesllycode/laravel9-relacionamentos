@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class loginController extends Controller
+class LoginController extends Controller
 {
-    //
+    public function index(){
+        return response()->json("oi deu certo ");
+    }
 }
