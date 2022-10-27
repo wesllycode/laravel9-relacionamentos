@@ -22,8 +22,7 @@ use \App\Models\Ip;
 
 Route::get('/', [CrudOperatorsController::class,'index'])->name('site.index');
 
-Route::prefix('create')->group(function () {
-    Route::get('/user',[CrudOperatorsController::class,'createUser'])->name('site.createuser');
-});
 
-Route::get('/listar',[IpController::class,'listar'])->name('ip.listar');
+Route::prefix('create')->group(function () {
+    Route::get('',[CrudOperatorsController::class,'createUser'])->name('site.createuser');
+});
